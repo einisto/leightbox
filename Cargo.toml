@@ -1,0 +1,13 @@
+[package]
+name = "leightbox"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tui = { version = "0.18", features = ["crossterm"], default-features = false }
+crossterm = "0.23"
+tokio = { version = "1.19.2", features = ["full"] }
+log = "0.4"
+rand = "0.8.5"
