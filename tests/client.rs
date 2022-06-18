@@ -6,6 +6,7 @@ use std::{error::Error, net::Ipv4Addr, time::Duration};
 type Result<T> = std::result::Result<T, Box<dyn Error>>;
 
 #[test]
+#[ignore]
 fn setup_client() -> Result<()> {
     let connection_type = ConnectionType::Connect;
     let host_info = HostInfo::new(Ipv4Addr::new(127, 0, 0, 1), String::from("abcd123"));
